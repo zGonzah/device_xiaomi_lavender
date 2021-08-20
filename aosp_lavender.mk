@@ -29,10 +29,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common revengeos stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
+AOSP_BUILDTYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Build Fingerprint
